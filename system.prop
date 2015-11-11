@@ -2,6 +2,8 @@
 # system.prop for one+
 #
 
+ro.sf.lcd_density=400
+
 # Bluetooth
 bluetooth.hfp.client=1
 
@@ -12,7 +14,6 @@ ro.qualcomm.cabl=0
 camera2.portability.force_api=1
 
 # Display
-ro.sf.lcd_density=480
 persist.hwc.mdpcomp.enable=true
 persist.sys.strictmode.disable=true
 ro.opengles.version=196608
