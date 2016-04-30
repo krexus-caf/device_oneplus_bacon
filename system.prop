@@ -2,7 +2,7 @@
 # system.prop for one+
 #
 
-ro.sf.lcd_density=480
+ro.sf.lcd_density=415
 
 # ADB
 ro.adb.secure=1
@@ -83,7 +83,80 @@ ro.qti.sensors.vmd=true
 # Time services
 persist.timed.enable=true
 
-# Wifi
-wifi.interface=wlan0
 # OTA
 ro.product.device=bacon
+
+# Wifi
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=300
+
+#battery savers
+ro.ril.disable.power.collapse=0
+ro.config.hw_power_saving=true
+power_supply.wakeup=enable
+ro.ril.sensor.sleep.control=1
+proximity_incall=enable
+
+# Fast Reboot
+persist.sys.shutdown.mode=hibernate
+ro.config.hw_quickpoweron=true
+
+# Signal Tweaks
+ro.ril.enable.amr.wideband=1
+persist.cust.tel.eons=1
+ro.ril.hsxpa=2
+ro.ril.gprsclass=12
+ro.ril.enable.dtm=1
+ro.ril.hsdpa.category=8
+ro.ril.enable.a53=1
+ro.ril.hsupa.category=6
+
+# Net Speed Tweaks
+net.ipv4.ip_no_pmtu_disc=0
+net.ipv4.route.flush=1
+net.ipv4.tcp_ecn=0
+net.ipv4.tcp_fack=1
+net.ipv4.tcp_mem=187000 187000 187000
+net.ipv4.tcp_moderate_rcvbuf=1
+net.ipv4.tcp_no_metrics_save=1
+net.ipv4.tcp_rfc1337=1
+net.ipv4.tcp_rmem=4096 39000 187000
+net.ipv4.tcp_sack=1
+net.ipv4.tcp_timestamps=1
+net.ipv4.tcp_window_scaling=1
+net.ipv4.tcp_wmem=4096 39000 187000
+net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.hspa=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.lte=524288,1048576,2097152,5242 88,1048576,2097152
+net.tcp.buffersize.hspda=4096,87380,256960,4096,16 384,256960
+net.tcp.buffersize.evdo_b=6144,87380,1048576,6144, 87380,1048576
+
+# Google DNS
+net.ppp0.dns1=8.8.8.8
+net.ppp0.dns2=8.8.4.4
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4 
+
+#CAF
+com.qc.hardware=1
+debug.qc.hardware=true
+debug.qctwa.preservebuf=1
+debug.qctwa.statusbar=1
+
+#Scrolling
+windowsmgr.max_events_per_sec=90
+ro.max.fling_velocity=12000
+ro.min.fling_velocity=8000
+
+#Touch
+touch.pressure.scale=0.001
+
+#Sound
+lpa.decode=false
+audio.decoder_override_check=true
+use.non-omx.mp3.decoder=false
+use.non-omx.aac.decoder=false
