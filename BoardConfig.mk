@@ -44,17 +44,17 @@ TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 # Tipsy additions
 BLOCK_BASED_OTA=false
 # Optimizations
-CLANG_O3 := true
+CLANG_O3 := false
 STRICT_ALIASING := false
-KRAIT_TUNINGS := true
+KRAIT_TUNINGS := false
 GRAPHITE_OPTS := false
-ENABLE_GCCONLY := true
+ENABLE_GCCONLY := false
 
 # Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9-uber/bin
-#KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 # Rom Toolchain
-TARGET_GCC_VERSION_EXP := 4.9-uber
+TARGET_GCC_VERSION_EXP := 4.9
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
