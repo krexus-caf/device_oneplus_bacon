@@ -325,13 +325,13 @@ service rfs_access /system/bin/rfs_access
 # QMUX must be in multiple groups to support external process connections
 service qmuxd /system/bin/qmuxd
     class main
-    user radio
+    user root
     group radio audio bluetooth gps diag qcom_diag
 
 service netmgrd /system/bin/netmgrd
     class main
     user root
-    group radio
+    group radio system
 
 # QCOM sensor
 service sensors /system/bin/sensors.qcom
@@ -442,7 +442,7 @@ service iprenew_bt-pan /system/bin/dhcpcd -n
 service loc_launcher /system/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
-    group gps qcom_oncrpc inet net_raw diag qcom_diag net_admin wifi
+    group gps inet net_raw diag qcom_diag net_admin wifi
 
 service qseecomd /system/bin/qseecomd
     class core
