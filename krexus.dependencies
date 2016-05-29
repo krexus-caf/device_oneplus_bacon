@@ -10,6 +10,11 @@
     "branch": "mm6.0"
   },
   {
+    "repository":  "TipsyOs/android_packages_apps_SnapdragonCamera",
+    "target_path": "packages/apps/SnapdragonCamera",
+    "branch": "mm6.0"
+  },
+  {
     "repository":  "krexus-caf/vendor_oneplus",
     "target_path": "vendor/oneplus",
     "branch": "caf"
