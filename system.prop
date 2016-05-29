@@ -2,7 +2,7 @@
 # system.prop for one+
 #
 
-ro.sf.lcd_density=400
+ro.sf.lcd_density=480
 
 # ADB
 ro.adb.secure=1
