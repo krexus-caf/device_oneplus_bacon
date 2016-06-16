@@ -5,19 +5,19 @@
     "branch": "caf"
   },
   {
-    "repository":  "Validus-Kernel/android_kernel_oneplus_msm8974",
+    "repository":  "ethanbanker2428/android_kernel_oneplus_msm8974-3.10",
     "target_path": "kernel/oneplus/msm8974",
-    "branch": "mm6.0"
+    "branch": "LA.BF.2.1.2_rb1.5"
   },
   {
-    "repository":  "TipsyOs/android_packages_apps_SnapdragonCamera",
+    "repository":  "CyanogenMod/android_packages_apps_Snap",
     "target_path": "packages/apps/SnapdragonCamera",
-    "branch": "mm6.0"
+    "branch": "cm-13.0"
   },
   {
-    "repository":  "krexus-caf/vendor_oneplus",
+    "repository":  "ethanbanker2428/android_vendor_oneplus",
     "target_path": "vendor/oneplus",
-    "branch": "caf"
+    "branch": "m-caf"
   },
   {
     "repository": "SlimRoms/android_external_stlport",
