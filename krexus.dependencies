@@ -12,7 +12,7 @@
   {
     "repository":  "TipsyOs/android_packages_apps_SnapdragonCamera",
     "target_path": "packages/apps/SnapdragonCamera",
-    "branch": "mm6.0"
+    "branch": "6.0"
   },
   {
     "repository":  "krexus-caf/vendor_oneplus",
