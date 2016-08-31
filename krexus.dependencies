@@ -5,14 +5,9 @@
     "branch": "caf"
   },
   {
-    "repository":  "Validus-Kernel/android_kernel_oneplus_msm8974",
+    "repository":  "GZR-Kernels/kernel_oneplus_msm8974",
     "target_path": "kernel/oneplus/msm8974",
-    "branch": "mm6.0"
-  },
-  {
-    "repository":  "TipsyOs/android_packages_apps_SnapdragonCamera",
-    "target_path": "packages/apps/SnapdragonCamera",
-    "branch": "6.0"
+    "branch": "toxic"
   },
   {
     "repository":  "krexus-caf/vendor_oneplus",
